@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    background-image: url('./img/pexels-kehn-hermano-3668371.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+header h1 {
+    text-align: center;
+    padding: .6rem 0;
+    letter-spacing: 5px;
+}
+
+.the-end {
+    background-color: rgba(115, 251, 239, 0.4);
+    padding: .5rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#top-section {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .5rem 0;
+}
+
+#top-section h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+
+/* BUTTONS */
+.btn {
+    padding: .5rem 0;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#new-deck {
+    padding: .5rem 1rem;
+}
+
+#draw-cards {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#mid-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#mid-section--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.card-container {
+    width: 170px;
+    height: 238px;
+    border: 1px solid black;
+    margin: 0.2rem auto;
+    border-radius: 5px;
+}
+
+#card-1, #card-2 {
+    background-color: rgb(124, 155, 124);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-1 {
+    background-image: url('./img/card-1-bg.jpg');
+}
+
+.card-2 {
+    background-image: url('./img/card-2-bg.jpg');
+}
+
+
+
+@media screen and (max-height: 700px) {
+    .card-container {
+        width: 130px;
+        height: 182px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-size: cover;
+    }
+
+    #mid-section {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    #mid-section--top {
+        gap: 3rem;
+    }
+
+    #draw-cards {
+        width: 20%;
+        left: 41%;
+    }
+}

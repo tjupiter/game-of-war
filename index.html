@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR - Card Game</title>
+
+    <meta name="description" content="WAR Card Game using REST API">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWSOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="top-section">
+            <h1>GAME OF WAR <i class="fa-solid fa-circle-question"></i></h1>
+            <h2 id="status-text">Welcome</h2>
+        </section>
+        <section id="mid-section">
+            <div id="mid-section--top">
+                <p>Remaining cards: <span id="remaining-cards">52</span></p>
+                <button id="new-deck" class="btn">NEW DECK</button>
+            </div>
+            <h2>
+                Computer: <span id="computer-score">0</span>
+            </h2>
+            <div id="card-1" class="card-container" class="cards"></div>
+            <div id="card-2" class="card-container" class="cards"></div>
+            <h2><span id="players-name">Player</span>: <span id="player-score">0</span></h2>
+        </section>
+        <button id="draw-cards" class="btn" disabled>DRAW CARDS</button>
+    </main>
+    
+<script src="index.js"></script>
+</body>
+</html>
